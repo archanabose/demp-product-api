@@ -28,8 +28,7 @@ ANYPOINT_CREDS = credentials('ANYPOINT_CREDENTIALS')
  
  
       steps {
-            bat 'mvn -U -V -e -B -DskipTests deploy -Pdev -DmuleDeploy -Dusername="%ANYPOINT_CREDS_USR%" -Dpassword="%ANYPOINT_CREDS_PSW%" 
-            -Dclient_id="%CLIENT_ID%" -Dclient_secret="%CLIENT_SECRET%"'
+            bat 'mvn -U -V -e -B -DskipTests deploy -Pdev -DmuleDeploy -Dusername="%ANYPOINT_CREDS_USR%" -Dpassword="%ANYPOINT_CREDS_PSW%" -Dclient_id="%CLIENT_ID%" -Dclient_secret="%CLIENT_SECRET%"'
       }
     }
   }
