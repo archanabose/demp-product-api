@@ -1,8 +1,8 @@
 pipeline {
 
   agent any
-environment {
-ANYPOINT_CREDS = credentials('ANYPOINT_CREDENTIALS')
+	environment {
+		ANYPOINT_CREDS = credentials('ANYPOINT_CREDENTIALS')
 
 }
   
