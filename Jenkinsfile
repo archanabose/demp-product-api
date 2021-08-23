@@ -21,7 +21,7 @@ pipeline {
         APP_NAME = '<DEV-API-NAME>'
       }
       steps {
-            bat 'mvn -U -V -e -B -DskipTests deploy -Pdev-DmuleDeploy '
+            bat 'mvn -U -V -e -B -DskipTests deploy -Pdev -DmuleDeploy '
       }
     }
   }
