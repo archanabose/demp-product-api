@@ -13,6 +13,7 @@ ANYPOINT_CREDS = credentials('ANYPOINT_CREDENTIALS')
             bat 'mvn -B -U -e -V clean -DskipTests package'
       }
     }
+    
 
     stage('Test') {
       steps {
@@ -24,6 +25,7 @@ ANYPOINT_CREDS = credentials('ANYPOINT_CREDENTIALS')
       environment {
  CLIENT_ID = credentials('DEV_CLIENT_ID')
  CLIENT_SECRET = credentials('DEV_CLIENT_SECRET')
+       }
        }
  
  
